@@ -15,7 +15,7 @@ class ProductCategoryTableDataSeeder extends Seeder
         ->delete();
         // Removing Bagisto defaut seeds
         DB::table('category_translations')
-        ->where('categories.id' ,'<>' ,1)
+        ->where('category_translations.id' ,'<>' ,1)
         ->delete();
 
         DB::table('categories')
